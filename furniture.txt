@@ -1,0 +1,1 @@
+Name: Fridge, Type: Electric, Quantity: 2
