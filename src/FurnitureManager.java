@@ -31,20 +31,19 @@ public class FurnitureManager extends JFrame {
         setLayout(new BorderLayout());
 
         JPanel inputPanel = new JPanel();
-        inputPanel.setLayout(new GridBagLayout()); // Using GridBagLayout for flexibility
+        inputPanel.setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.HORIZONTAL;
-        gbc.insets = new Insets(5, 5, 5, 5); // Add some space between components
+        gbc.insets = new Insets(5, 5, 5, 5);
 
-        // Furniture Name
-        gbc.gridx = 0; // Column
-        gbc.gridy = 0; // Row
+        gbc.gridx = 0;
+        gbc.gridy = 0;
         inputPanel.add(new JLabel("Furniture Name:"), gbc);
-        nameField = new JTextField(20); // Set width
+        nameField = new JTextField(20);
         gbc.gridx = 1;
         inputPanel.add(nameField, gbc);
 
-        // Furniture Type
+
         gbc.gridx = 0;
         gbc.gridy = 1;
         inputPanel.add(new JLabel("Furniture Type:"), gbc);
