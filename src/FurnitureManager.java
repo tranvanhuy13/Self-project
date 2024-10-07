@@ -47,19 +47,17 @@ public class FurnitureManager extends JFrame {
         gbc.gridx = 0;
         gbc.gridy = 1;
         inputPanel.add(new JLabel("Furniture Type:"), gbc);
-        typeField = new JTextField(20); // Set width
+        typeField = new JTextField(20);
         gbc.gridx = 1;
         inputPanel.add(typeField, gbc);
 
-        // Quantity
         gbc.gridx = 0;
         gbc.gridy = 2;
         inputPanel.add(new JLabel("Quantity:"), gbc);
-        quantityField = new JTextField(20); // Set width
+        quantityField = new JTextField(20);
         gbc.gridx = 1;
         inputPanel.add(quantityField, gbc);
 
-        // Add Buttons
         gbc.gridx = 0;
         gbc.gridy = 3;
         JButton addButton = new JButton("Add Furniture");
@@ -93,10 +91,9 @@ public class FurnitureManager extends JFrame {
         sortButton.addActionListener(new SortAction());
         inputPanel.add(sortButton, gbc);
 
-        // Display Labels
         gbc.gridx = 0;
         gbc.gridy = 6;
-        gbc.gridwidth = 2; // Span across two columns
+        gbc.gridwidth = 2;
         countLabel = new JLabel("Total Unique Furniture: 0");
         inputPanel.add(countLabel, gbc);
 
